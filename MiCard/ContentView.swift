@@ -26,10 +26,11 @@ struct ContentView: View {
                     .cornerRadius(borderRadius)
                     .overlay(RoundedRectangle(cornerRadius: borderRadius).stroke(Color(.white), lineWidth: 8))
                 
-                Text(name)
+                Text(name + " ")
                     .font(Font.custom("Pacifico-Regular", size: 36))
                     .foregroundColor(Color(.white))
                     .bold()
+                    .padding(.leading, 10)
                 Text("iOS Developer")
                     .foregroundColor(Color(.white))
                     .font(.system(size: 25))
