@@ -12,20 +12,21 @@ struct ContentView: View {
         let borderRadius: CGFloat = 20
         let phoneNumber = "+380999490665"
         let email = "faleonfall@gmail.com"
+        let name = "Volodymyr Kryvytskyi"
         
         ZStack {
             Color("BackgroundDark")
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Image("vladimir")
+                Image("Volodymyr")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 165.0, height: 225.0)
                     .cornerRadius(borderRadius)
                     .overlay(RoundedRectangle(cornerRadius: borderRadius).stroke(Color(.white), lineWidth: 8))
                 
-                Text("Volodymyr Kryvytskyi ")
+                Text(name)
                     .font(Font.custom("Pacifico-Regular", size: 36))
                     .foregroundColor(Color(.white))
                     .bold()
