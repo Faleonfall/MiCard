@@ -15,11 +15,11 @@ struct ContentView: View {
         let name = "Volodymyr Kryvytskyi"
         
         ZStack {
-            Color("BackgroundDark")
+            Color(.backgroundDark)
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Image("Volodymyr")
+                Image(.volodymyr)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 165.0, height: 225.0)
